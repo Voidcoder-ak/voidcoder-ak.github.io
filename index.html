@@ -34,14 +34,12 @@ layout: default
     </div>
 </section>
 
-<section id="blog">
-    <h2><span class="prompt">guest@voidcoder:~$</span> ls -l ./blog_posts</h2>
-    <ul>
-        {% for post in site.posts %}
-            <li>
-                <span>{{ post.date | date: "%b %d, %Y" }}</span> - 
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+<!-- Blog Teaser -->
+<section id="blog-teaser">
+    <h2><span class="prompt">guest@voidcoder:~$</span> cat ./blog/readme.md</h2>
+    <div class="card">
+        <p>I regularly write about my experiences learning DSA, optimizing C++ code, and prototyping embedded systems.</p>
+        <br>
+        <a href="/blog.html" class="project-link">cd ./blog && ls -></a>
+    </div>
 </section>
