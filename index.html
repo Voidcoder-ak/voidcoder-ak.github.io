@@ -1,5 +1,79 @@
 <!DOCTYPE html>
-    <div class="center">
-      <h1>COMING SOON</h1>
-      <link rel="stylesheet" href="style.css">
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voidcoder | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#about">~/home</a>
+      <a href="#experience">~/experience</a>
+      <a href="#projects">~/projects</a>
+      <a href="#blog">~/blog</a>
     </div>
+    <button id="theme-toggle" class="theme-btn">[ toggle_theme ]</button>
+  </nav>
+
+  <main>
+    <!-- Hero / About Me -->
+    <section id="about" class="hero">
+      <h1><span class="prompt">guest@voidcoder:~$</span> whoami</h1>
+      <p class="subtitle">Software Developer | MCA Student</p>
+      <p>
+        I am a developer specializing in building efficient logic and solving complex problems.
+        My core expertise lies in <strong>C++, Python, and Data Structures & Algorithms (DSA)</strong>.
+        When I am not optimizing sorting logic or debugging lower-level systems, I am exploring my secondary interests
+        in IoT and Embedded Systems.
+      </p>
+      <div class="action-links">
+        <a href="https://github.com/voidcoder-ak" target="_blank">[ GitHub ]</a>
+        <a href="YOUR_LEETCODE_URL" target="_blank">[ LeetCode ]</a>
+        <a href="resume.pdf" target="_blank">[ Resume ]</a>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2><span class="prompt">guest@voidcoder:~$</span> cat experience.txt</h2>
+      <div class="card">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p>Focusing on advanced computing concepts, system programming, and algorithm optimization.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2><span class="prompt">guest@voidcoder:~$</span> ls -l ./projects</h2>
+      <div class="card">
+        <h3>DSA Problem Solving Tracker</h3>
+        <p>A repository containing optimized solutions for complex algorithms, including custom implementations for
+          arrays and dynamic programming.</p>
+        <a href="#" class="project-link">View Repo -></a>
+      </div>
+      <div class="card">
+        <h3>Embedded Systems Prototyping</h3>
+        <p>Bridging hardware and software through IoT explorations and low-level system interactions.</p>
+        <a href="#" class="project-link">View Repo -></a>
+      </div>
+    </section>
+
+    <!-- Blog Teaser -->
+    <section id="blog">
+      <h2><span class="prompt">guest@voidcoder:~$</span> tail -n 3 ./blog</h2>
+      <p>Blog engine currently initializing... articles on C++, debugging, and DSA coming soon.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>System halt. EOF.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

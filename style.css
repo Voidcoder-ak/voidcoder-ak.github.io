@@ -1,8 +1,126 @@
-.center {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Color Variables for Theming */
+:root[data-theme="dark"] {
+    --bg-color: #0a0a0a;
+    --text-color: #e0e0e0;
+    --accent-color: #ffffff;
+    --border-color: #333333;
+    --card-bg: #111111;
+}
+
+:root[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #000000;
+    --border-color: #cccccc;
+    --card-bg: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Clean terminal font */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 100;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.theme-btn:hover {
+    color: var(--text-color);
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* Typography & Terminal Accents */
+h1, h2, h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.prompt {
+    color: #888888; /* Subtle grey so it doesn't overpower the text */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Links */
+.action-links a, .project-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.action-links a:hover, .project-link:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
     text-align: center;
-  }
+    padding: 40px;
+    border-top: 1px solid var(--border-color);
+    color: #888;
+}
