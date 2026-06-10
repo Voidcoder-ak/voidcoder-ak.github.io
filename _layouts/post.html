@@ -1,38 +1,21 @@
 ---
 layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} // voidcoder-ak</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-</head>
-<body>
-<nav>
-  <div class="nav-container">
-    <a href="{{ site.baseurl }}/" class="logo">[voidcoder-ak]</a>
-    <ul class="nav-links">
-      <li><a href="{{ site.baseurl }}/">Home</a></li>
-      <li><a href="/blog/">Blog</a></li>
-    </ul>
-  </div>
-</nav>
 
-<main class="grid-container">
-    <div class="box">
-      <h2>// {{ page.title }}</h2>
-      <span class="blog-date">[ {{ page.date | date: "%Y-%m-%d" }} ]</span>
-      <div class="post-content" style="margin-top: 1rem;">
-        {{ content }}
-      </div>
-      <a href="/blog/" style="display:inline-block; margin-top:2rem;">← Back to Blog</a>
+<main class="post-container">
+  <article class="box">
+    <h1>// {{ page.title }}</h1>
+
+    <p class="blog-date">
+      [ {{ page.date | date: "%Y-%m-%d" }} ]
+    </p>
+
+    <div class="post-content">
+      {{ content }}
     </div>
-</main>
 
-<footer>
-  <p>// EOF - Built with terminal aesthetics</p>
-</footer>
-</body>
-</html>
+    <p>
+      <a href="{{ site.baseurl }}/blog/">← Back to Blog</a>
+    </p>
+  </article>
+</main>
