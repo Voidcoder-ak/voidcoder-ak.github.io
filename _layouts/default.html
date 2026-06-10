@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voidcoder | Developer</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} // voidcoder-ak</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="/#about">~/home</a>
-            <a href="/#experience">~/experience</a>
-            <a href="/#projects">~/projects</a>
-            <!-- Point this to the new separate page -->
-            <a href="/blog.html">~/blog</a>
-        </div>
-        <button id="theme-toggle" class="theme-btn">[ toggle_theme ]</button>
-    </nav>
 
-    <main>
-        {{ content }}
-    </main>
+<nav>
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/" class="logo">[voidcoder-ak]</a>
+    <ul class="nav-links">
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <footer>
-        <p>System halt. EOF.</p>
-    </footer>
+<main class="grid-container">
+  {{ content }}
+</main>
 
-    <script src="/script.js"></script>
+<footer>
+  <p>// EOF - Built with terminal aesthetics</p>
+</footer>
+
+<script src="{{ site.baseurl }}/script.js"></script>
 </body>
 </html>
