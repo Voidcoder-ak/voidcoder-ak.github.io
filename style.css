@@ -291,3 +291,30 @@ footer {
 .prompt {
     color: var(--green-glow);
 }
+
+/* Blog Post Layout */
+.post-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post-container .box {
+    width: 100%;
+}
+
+.post-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.post-content pre {
+    overflow-x: auto;
+}
