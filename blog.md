@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Voidcoder | Blog"
+permalink: /blog/
 ---
 
 <main class="grid-container">
@@ -44,7 +45,7 @@ title: "Voidcoder | Blog"
                 </article>
             {% empty %}
                 <div class="box">
-                    <p class="cmd">> No logs found in _posts/ repository folder.</p>
+                    <p class="cmd">> Error: No active logs found in _posts/ repository directory.</p>
                 </div>
             {% endfor %}
         </div>
