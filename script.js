@@ -18,3 +18,39 @@ themeToggle.addEventListener('click', () => {
     // Save the new preference
     localStorage.setItem('theme', newTheme);
 });
+
+// Copy Code Button Logic
+document.addEventListener('DOMContentLoaded', () => {
+    // Find all <pre> tags (which wrap the code blocks)
+    const codeBlocks = document.querySelectorAll('pre');
+
+    codeBlocks.forEach((block) => {
+        // Create the copy button
+        const button = document.createElement('button');
+        button.innerText = 'Copy';
+        button.className = 'copy-btn';
+
+        // Add it to the code block
+        block.appendChild(button);
+
+        // What happens when you click it
+        button.addEventListener('click', async () => {
+            // Find the actual text inside the <code> tag
+            const code = block.querySelector('code').innerText;
+
+            try {
+                // Use the browser's clipboard API to copy the text
+                await navigator.clipboard.writeText(code);
+                
+                // Visual feedback
+                button.innerText = 'Copied!';
+                setTimeout(() => {
+                    button.innerText = 'Copy';
+                }, 2000); // Change back after 2 seconds
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                button.innerText = 'Error';
+            }
+        });
+    });
+});
