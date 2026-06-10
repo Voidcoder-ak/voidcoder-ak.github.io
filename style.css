@@ -1,21 +1,23 @@
-/* --- THEME SYSTEM (Adapts to Device Theme) --- */
+/* --- THEME COLORS (SYSTEM MATID-DARK PREFERENCE) --- */
 :root {
     --bg: #ffffff;
     --text: #111111;
     --border: #dddddd;
     --accent: #000000;
     --box-bg: #fcfcfc;
-    --tag-bg: #f0f0f0;
+    --green-glow: #00aa00;
+    --yellow-glow: #aa8800;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #0a0a0a;
-        --text: #e0e0e0;
-        --border: #222222;
+        --text: #cdcdcd;
+        --border: #1a1a1a;
         --accent: #ffffff;
-        --box-bg: #111111;
-        --tag-bg: #1a1a1a;
+        --box-bg: #0d0d0d;
+        --green-glow: #33ff33;
+        --yellow-glow: #ffff33;
     }
 }
 
@@ -30,25 +32,25 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-/* --- NAVIGATION --- */
+/* --- STICKY NAVIGATION --- */
 nav {
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     background-color: var(--bg);
-    z-index: 10;
+    z-index: 100;
 }
 
 .nav-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 12px 20px;
 }
 
 .logo {
@@ -73,145 +75,205 @@ nav {
     text-decoration: underline;
 }
 
-/* --- LAYOUT GRID --- */
+/* --- Layout Structure (Inspired by Inspiration) --- */
 .grid-container {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 30px auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    /* Left column (Profile): 280px | Center (Main): 1.5 share | Right (Status): 240px */
+    grid-template-columns: 280px 1.5fr 240px;
+    gap: 25px;
+    align-items: start;
 }
 
-.full-width {
-    grid-column: 1 / -1;
+/* Responsive collapse for medium screens */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 280px 1fr;
+    }
+    .right-status-sidebar {
+        grid-column: 1 / -1; /* Pushes status to bottom if screen gets tighter */
+    }
 }
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Full width collapse on mobile devices */
     }
 }
 
-/* --- COMPONENTS --- */
-h1 {
-    font-size: 2.5rem;
-    color: var(--accent);
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--accent);
-    margin: 25px 0 10px 0;
-}
-
-.subtitle {
-    opacity: 0.7;
-}
-
-/* Elegant tech boxes */
+/* --- CORE COMPONENT BOXES --- */
 .box {
     border: 1px solid var(--border);
     background-color: var(--box-bg);
-    padding: 20px;
-    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
-.cmd {
-    margin-bottom: 10px;
+h2 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin: 20px 0 8px 0;
+    letter-spacing: 1px;
 }
 
-/* Tags and skills spacing */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* --- LEFT SIDEBAR: PROFILE COMPONENTS --- */
+.left-profile-card .avatar-box {
+    border: 1px solid var(--border);
+    padding: 5px;
+    background-color: var(--box-bg);
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
-.tag {
-    background-color: var(--tag-bg);
-    padding: 2px 6px;
-    font-size: 0.9rem;
-}
-
-/* Sidebar lists */
-.links-box a {
+.left-profile-card .avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     display: block;
+    filter: grayscale(100%); /* Keeps the image completely black and white */
+}
+
+.profile-info {
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.profile-title {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.profile-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.profile-meta {
+    font-size: 0.85rem;
+}
+
+.profile-meta .label {
+    opacity: 0.5;
+}
+
+/* Left Social Links Layout */
+.links-box a {
+    display: flex;
+    justify-content: space-between;
     color: var(--text);
     text-decoration: none;
+    font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
+.links-box a:last-child {
+    margin-bottom: 0;
+}
+
+.links-box a .arrow {
+    opacity: 0.4;
+}
+
 .links-box a:hover {
-    text-decoration: underline;
+    color: var(--accent);
+    background-color: var(--border);
 }
 
-/* Projects grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* Core skills tagging spacing */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
 }
 
-@media (max-width: 600px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
+.skill-tag {
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* --- CENTER CONTENT COMPONENTS --- */
+.cmd {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.project-card h3 {
+    font-size: 1rem;
+    color: var(--accent);
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-bottom: 1px dashed var(--border);
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
-.status-tag {
+.status-tag, .blog-date {
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
-/* Timeline elements */
+.project-card p {
+    font-size: 0.88rem;
+}
+
+/* Timeline components */
 .timeline-item {
-    margin-bottom: 20px;
-    border-left: 2px solid var(--border);
+    border-left: 1px solid var(--border);
     padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-item .date {
-    font-size: 0.85rem;
-    opacity: 0.6;
-}
-
-/* Blog layouts */
-.blog-item .blog-date {
-    font-size: 0.85rem;
-    opacity: 0.6;
-    display: block;
-}
-
-.blog-title {
+    font-size: 0.8rem;
     color: var(--accent);
+    opacity: 0.6;
+}
+
+/* --- RIGHT SIDEBAR: STATUS COMPONENTS --- */
+.status-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.status-val-green { color: var(--green-glow); }
+.status-val-yellow { color: var(--yellow-glow); }
+
+.blog-link {
+    display: block;
+    color: var(--text);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: inline-block;
-    margin: 5px 0;
+    font-size: 0.88rem;
+    margin-top: 4px;
 }
 
-.blog-title:hover {
+.blog-link:hover {
     text-decoration: underline;
+    color: var(--accent);
 }
 
+/* --- GLOBAL FOOTER --- */
 footer {
     text-align: center;
-    padding: 40px;
-    margin-top: 60px;
+    padding: 30px;
     border-top: 1px solid var(--border);
-    opacity: 0.5;
-    font-size: 0.9rem;
+    margin-top: 50px;
+    opacity: 0.4;
+    font-size: 0.85rem;
 }

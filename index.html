@@ -13,9 +13,8 @@
             <a href="#home" class="logo">[voidcoder-ak]</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
@@ -23,93 +22,100 @@
 
     <main class="grid-container">
         
-        <header id="home" class="hero-block full-width">
-            <h1>voidcoder-ak</h1>
-            <p class="subtitle">Software Developer // DSA // Embedded Systems</p>
-        </header>
+        <aside class="left-profile-card">
+            <div class="avatar-box">
+                <img src="avatar.jpg" alt="voidcoder-ak avatar" class="avatar">
+            </div>
 
-        <section id="about" class="main-content">
-            <h2>// WHOAMI</h2>
-            <div class="box">
-                <p class="cmd">> A budding software developer exploring data structures, algorithms, and lower-level systems code.</p>
-                <p class="cmd">> Bridging software logic with hardware prototyping, currently diving deep into C++ programming and Linux environments.</p>
+            <div class="profile-info">
+                <h1 class="profile-name">voidcoder-ak</h1>
+                <p class="profile-title">Software Developer // Robotist</p>
+                <p class="profile-subtitle">Open Source Builder</p>
+            </div>
+
+            <div class="box profile-meta">
+                <p><span class="label">Env:</span> Linux / Fedora</p>
+                <p><span class="label">Editor:</span> Vim / VS Code</p>
+            </div>
+
+            <h2>// CONNECT</h2>
+            <div class="box links-box">
+                <a href="https://github.com/voidcoder-ak" target="_blank">GitHub <span class="arrow">/voidcoder-ak</span></a>
+                <a href="#" target="_blank">LeetCode <span class="arrow">/voidcoder-ak</span></a>
+                <a href="#" target="_blank">LinkedIn <span class="arrow">/in/voidcoder</span></a>
             </div>
 
             <h2>// CORE_SKILLS</h2>
-            <div class="box skills-grid">
-                <span>[ C++ ]</span>
-                <span>[ Data Structures ]</span>
-                <span>[ Linux/Fedora ]</span>
-                <span>[ Git ]</span>
-                <span>[ Embedded Systems ]</span>
-            </div>
-        </section>
-
-        <aside class="sidebar">
-            <h2>// STATUS</h2>
-            <div class="box status-box">
-                <p>Focus: <span class="tag">Learning_DSA</span></p>
-                <p>Hardware: <span class="tag">Raspberry_Pi</span></p>
-                <p>OS: <span class="tag">Linux</span></p>
-            </div>
-
-            <h2>// LINKS</h2>
-            <div class="box links-box">
-                <a href="https://github.com/voidcoder-ak" target="_blank">GitHub ↗</a>
-                <a href="YOUR_LEETCODE_URL" target="_blank">LeetCode ↗</a>
-                <a href="resume.pdf" target="_blank">Resume ↗</a>
+            <div class="box skills-box">
+                <div class="skill-tag">[ C++ ]</div>
+                <div class="skill-tag">[ Data Structures ]</div>
+                <div class="skill-tag">[ Embedded Systems ]</div>
+                <div class="skill-tag">[ Linux Systems ]</div>
+                <div class="skill-tag">[ Git ]</div>
             </div>
         </aside>
 
-        <section id="experience" class="full-width">
-            <h2>// MY_EXPERIENCE</h2>
+        <section class="center-content">
+            
+            <div id="home" class="box intro-box">
+                <h2>// WHOAMI</h2>
+                <p class="cmd">> A computing developer implementing low-level optimization algorithms and exploring system frameworks.</p>
+                <p class="cmd">> Bridging programmatic structural configurations cleanly into hardware controls and prototyping runtime modules.</p>
+            </div>
+
+            <h2>// RECENT_PROJECTS</h2>
+            <div class="project-list">
+                <div class="box project-card">
+                    <div class="project-header">
+                        <h3>Network Socket Engine</h3>
+                        <span class="status-tag">[ Active ]</span>
+                    </div>
+                    <p>An implementation exploring low-level networking transport logic, processing UDP packets, and organizing raw socket control threads.</p>
+                </div>
+
+                <div class="box project-card">
+                    <div class="project-header">
+                        <h3>DSA Sandbox Environment</h3>
+                        <span class="status-tag">[ Completed ]</span>
+                    </div>
+                    <p>A central warehouse comprising clean data structure optimizations, sorting frameworks, and algorithmic solutions written strictly in C++.</p>
+                </div>
+            </div>
+
+            <h2>// ACTIVITY_TIMELINE</h2>
             <div class="box timeline">
                 <div class="timeline-item">
                     <span class="date">[ PRESENT ]</span>
-                    <h3>Robotics Prototyping & Systems Exploration</h3>
-                    <p>Researching and designing hardware control environments utilizing C++ scripts and embedded computing platforms.</p>
+                    <h3>Robotics System Integration</h3>
+                    <p>Configuring operational layers, peripheral controls, and behavioral processing setups using microcontroller environments.</p>
                 </div>
                 <div class="timeline-item">
                     <span class="date">[ CONTINUOUS ]</span>
-                    <h3>Algorithmic Foundations</h3>
-                    <p>Solving complex data structure tracking problems, multidimensional array allocations, and handling linked list configurations natively in C++.</p>
+                    <h3>Structural Code Foundations</h3>
+                    <p>Deconstructing algorithm problems, pointer-based structures, memory address allocations, and vector calculations.</p>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="full-width">
-            <h2>// PROJECTS</h2>
-            <div class="project-grid">
-                <div class="box project-card">
-                    <div class="project-header">
-                        <h3>Network Socket App</h3>
-                        <span class="status-tag">[ Active ]</span>
-                    </div>
-                    <p>An implementation exploring network protocol interactions, UDP/TCP transmissions, and raw socket architectures.</p>
-                </div>
-                <div class="box project-card">
-                    <div class="project-header">
-                        <h3>DSA Sandbox</h3>
-                        <span class="status-tag">[ Completed ]</span>
-                    </div>
-                    <p>A repository containing optimized algorithmic challenges written cleanly in modern C++.</p>
-                </div>
+        <aside class="right-status-sidebar">
+            <h2>// SYS_STATUS</h2>
+            <div class="box status-box">
+                <p>Focus: <span class="status-val-green">Scattered</span></p>
+                <p>Build: <span class="status-val-yellow">Shipping</span></p>
+                <p>Coffee: <span class="status-val-green">Active</span></p>
             </div>
-        </section>
 
-        <section id="blog" class="full-width">
-            <h2>// RECENT_WRITEUPS</h2>
-            <div class="box blog-item">
+            <h2>// WRITEUPS</h2>
+            <div class="box blog-box">
                 <span class="blog-date">2026.06.10</span>
-                <a href="#" class="blog-title">Demystifying Memory Management in Dynamic Node Structures</a>
-                <p>A quick breakdown of how I debugged node assignments while handling data addresses directly...</p>
+                <a href="#" class="blog-link">Memory Reference Tracking in Node Links</a>
             </div>
-        </section>
+        </aside>
 
     </main>
 
     <footer>
-        <p>// EOF - Built from scratch</p>
+        <p>// EOF - Built with terminal aesthetics</p>
     </footer>
 
 </body>
