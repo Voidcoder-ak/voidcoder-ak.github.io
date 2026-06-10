@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Initializing the Engine: My First Post"
+date: 2026-05-29
 ---
 
 I finally got my Raspberry Pi set up for my embedded systems project. Here is how the final wiring looks:
