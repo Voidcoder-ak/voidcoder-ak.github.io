@@ -162,6 +162,11 @@ p { margin: 0 0 1em; max-width: var(--read); }
   font-size: .85rem; font-weight: 600;
   padding: 4px 10px; border-radius: 999px;
 }
+/* "Learning" tags: outlined instead of filled, so they read as in-progress */
+.tags--learning li {
+  background: transparent; color: var(--muted);
+  border: 1.5px dashed #b7bbcb;
+}
 
 /* Footer */
 .site-footer {
