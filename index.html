@@ -1,122 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>voidcoder-ak // Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akshat Kumar Kashyap — Designer and Developer</title>
+  <meta name="description" content="Portfolio of Akshat Kumar Kashyap: UX design case studies and software engineering projects.">
+
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="logo">[voidcoder-ak]</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="/blog/">Blog</a></li>
-            </ul>
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Akshat Kumar Kashyap, home">AK</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html#design">Design</a>
+        <a href="index.html#engineering">Engineering</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="hero-hello">नमस्ते, I'm Akshat Kumar Kashyap.</p>
+
+        <h1>
+          I <span class="anno anno--circle">design<svg viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="900" d="M34 16 C 86 2, 172 6, 193 40 C 206 70, 150 96, 96 95 C 40 94, 5 78, 8 50 C 11 27, 52 10, 128 9"/></svg><span class="note" aria-hidden="true">3 years as a UX designer</span></span>
+          software people understand, then I
+          <span class="anno anno--under">build it.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="900" d="M4 13 C 70 5, 160 3, 296 9 M 30 18 C 120 12, 200 12, 280 15"/></svg><span class="note" aria-hidden="true">C++, React, ROS&nbsp;2 and an ESP32 rover</span></span>
+        </h1>
+
+        <!-- On phones, the hand-written notes show here instead -->
+        <ul class="hero-notes hand" aria-hidden="true">
+          <li>3 years as a UX designer</li>
+          <li>C++, React, ROS 2 and an ESP32 rover</li>
+        </ul>
+
+        <p class="hero-sub">
+          I spent three years running user research and designing products for clients.
+          Now I'm doing my MCA and writing the software myself, from React dashboards
+          to firmware for a robot rover.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#design">See design work</a>
+          <a class="btn" href="#engineering">See engineering work</a>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <main class="grid-container">
-        
-        <aside class="left-profile-card">
-            <div class="avatar-box">
-                <img src="avatar.jpg" alt="voidcoder-ak avatar" class="avatar">
+    <!-- ================= DESIGN CASE STUDIES ================= -->
+    <section class="section" id="design">
+      <div class="wrap">
+        <div class="section-intro">
+          <h2>Design case studies</h2>
+          <p>Research, wireframes, testing and the final screens, with the reasons behind each decision.</p>
+        </div>
+
+        <div class="case-list">
+
+          <!-- Case 1: Codex -->
+          <article class="case-row">
+            <a href="codex.html" aria-label="Read the Codex Matching Path case study">
+              <!-- REPLACE: <img src="images/codex/cover.png" alt="Codex match page on a tablet"> -->
+              <div class="ph"><span>Codex cover image<br>(tablet mockup of the match page)</span></div>
+            </a>
+            <div>
+              <h3>Codex Matching Path</h3>
+              <p class="lede">Making it easier for researchers and citizen scientists to match photos of the same wild animal, so they can track individuals across sightings.</p>
+              <dl class="facts">
+                <dt>Client</dt><dd>WildMe</dd>
+                <dt>Role</dt><dd>UX designer (generalist)</dd>
+                <dt>When</dt><dd>Jan – Oct 2023</dd>
+              </dl>
+              <a class="btn" href="codex.html">Read the case study</a>
             </div>
+          </article>
 
-            <div class="profile-info">
-                <h1 class="profile-name">voidcoder-ak</h1>
-                <p class="profile-title">Software Developer // Robotist</p>
-                <p class="profile-subtitle">Open Source Builder</p>
+          <!-- Case 2: Restro -->
+          <article class="case-row">
+            <a href="restro.html" aria-label="Read the Restro case study">
+              <!-- REPLACE: <img src="images/restro/cover.png" alt="Restro app screens"> -->
+              <div class="ph"><span>Restro cover image<br>(row of mobile screens)</span></div>
+            </a>
+            <div>
+              <h3>Restro</h3>
+              <p class="lede">A food delivery app for unique local restaurants. We added a "Discover" section, simplified checkout and added personal recommendations.</p>
+              <dl class="facts">
+                <dt>Platform</dt><dd>Mobile app and website</dd>
+                <dt>Role</dt><dd>UX designer</dd>
+              </dl>
+              <a class="btn" href="restro.html">Read the case study</a>
             </div>
+          </article>
 
-            <div class="box profile-meta">
-                <p><span class="label">Env:</span> Linux / Fedora</p>
-                <p><span class="label">Editor:</span> Vim / VS Code</p>
+          <!-- Case 3: Learning Bin -->
+          <article class="case-row">
+            <a href="learning-bin.html" aria-label="Read the Learning Bin case study">
+              <!-- REPLACE: <img src="images/learning-bin/cover.png" alt="Learning Bin website on laptop and tablet"> -->
+              <div class="ph"><span>Learning Bin cover image<br>(website on laptop and tablet)</span></div>
+            </a>
+            <div>
+              <h3>Learning Bin</h3>
+              <p class="lede">An education platform that gives good learning material to anyone who needs it, aimed at students from primary school to senior high school.</p>
+              <dl class="facts">
+                <dt>Platform</dt><dd>Website</dd>
+                <dt>Role</dt><dd>UX designer</dd>
+              </dl>
+              <a class="btn" href="learning-bin.html">Read the case study</a>
             </div>
+          </article>
 
-            <h2>// CONNECT</h2>
-            <div class="box links-box">
-                <a href="https://github.com/voidcoder-ak" target="_blank">GitHub <span class="arrow">/voidcoder-ak</span></a>
-                <a href="#" target="_blank">LeetCode <span class="arrow">/voidcoder-ak</span></a>
-                <a href="#" target="_blank">LinkedIn <span class="arrow">/in/voidcoder</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENGINEERING PROJECTS ================= -->
+    <section class="section" id="engineering">
+      <div class="wrap">
+        <div class="section-intro">
+          <h2>Engineering projects</h2>
+          <p>Things I've built, from the firmware up to the browser.</p>
+        </div>
+
+        <div class="spec">
+
+          <!-- Project 1: Rover -->
+          <article class="spec-row">
+            <div>
+              <!-- REPLACE: <img src="images/dev/rover.jpg" alt="The rover on its test track"> -->
+              <div class="ph"><span>Rover photo or GIF</span></div>
             </div>
-
-            <h2>// CORE_SKILLS</h2>
-            <div class="box skills-box">
-                <div class="skill-tag">[ C++ ]</div>
-                <div class="skill-tag">[ Data Structures ]</div>
-                <div class="skill-tag">[ Embedded Systems ]</div>
-                <div class="skill-tag">[ Linux Systems ]</div>
-                <div class="skill-tag">[ Git ]</div>
+            <div>
+              <span class="status">In progress, team project</span>
+              <h3>Autonomous rover with vision and LiDAR</h3>
+              <p class="what">A two-wheel rover that follows a line and stops by itself when something is in its way. A laptop does the thinking and an ESP32 drives the motors.</p>
+              <ul class="built">
+                <li>ESP32 firmware that turns simple serial commands into motor speeds, with a 200&nbsp;ms safety stop if commands stop arriving.</li>
+                <li>Smooth speed ramping and dead-zone handling, so even slow commands actually turn the wheels.</li>
+                <li>A ROS&nbsp;2 bridge between the laptop and the ESP32, plus LiDAR-based obstacle stopping.</li>
+              </ul>
+              <ul class="tags">
+                <li>C++</li><li>ESP32</li><li>ROS 2 Jazzy</li><li>OpenCV</li><li>LiDAR</li><li>PlatformIO</li>
+              </ul>
+              <div class="links">
+                <a href="https://github.com/Voidcoder-ak/Autonomous_Rover_Vision_LiDAR_System">View code</a>
+              </div>
             </div>
-        </aside>
+          </article>
 
-        <section class="center-content">
-            
-            <div id="home" class="box intro-box">
-                <h2>// WHOAMI</h2>
-                <p class="cmd">> A computing developer implementing low-level optimization algorithms and exploring system frameworks.</p>
-                <p class="cmd">> Bridging programmatic structural configurations cleanly into hardware controls and prototyping runtime modules.</p>
+          <!-- Project 2: Alert platform -->
+          <article class="spec-row">
+            <div>
+              <!-- REPLACE: <img src="images/dev/alerts.png" alt="Alert platform dashboard with live notifications"> -->
+              <div class="ph"><span>Dashboard screenshot</span></div>
             </div>
-
-            <h2>// RECENT_PROJECTS</h2>
-            <div class="project-list">
-                <div class="box project-card">
-                    <div class="project-header">
-                        <h3>Network Socket Engine</h3>
-                        <span class="status-tag">[ Active ]</span>
-                    </div>
-                    <p>An implementation exploring low-level networking transport logic, processing UDP packets, and organizing raw socket control threads.</p>
-                </div>
-
-                <div class="box project-card">
-                    <div class="project-header">
-                        <h3>DSA Sandbox Environment</h3>
-                        <span class="status-tag">[ Completed ]</span>
-                    </div>
-                    <p>A central warehouse comprising clean data structure optimizations, sorting frameworks, and algorithmic solutions written strictly in C++.</p>
-                </div>
+            <div>
+              <span class="status">Live</span>
+              <h3>GitHub alert platform</h3>
+              <p class="what">Connect a GitHub repository, set rules like "tell me when a new issue mentions <em>bug</em>", and get notified live in a dashboard.</p>
+              <ul class="built">
+                <li>A webhook endpoint that checks GitHub's signature (HMAC) before trusting any event.</li>
+                <li>A rule engine that matches event fields using equals, contains, greater than and less than.</li>
+                <li>Live notifications pushed to the browser with Socket.IO, behind JWT login.</li>
+              </ul>
+              <ul class="tags">
+                <li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li><li>Socket.IO</li>
+              </ul>
+              <div class="links">
+                <!-- TODO: put the real links here -->
+                <a href="#">View code</a>
+                <a href="#">Live demo</a>
+              </div>
             </div>
+          </article>
 
-            <h2>// ACTIVITY_TIMELINE</h2>
-            <div class="box timeline">
-                <div class="timeline-item">
-                    <span class="date">[ PRESENT ]</span>
-                    <h3>Robotics System Integration</h3>
-                    <p>Configuring operational layers, peripheral controls, and behavioral processing setups using microcontroller environments.</p>
-                </div>
-                <div class="timeline-item">
-                    <span class="date">[ CONTINUOUS ]</span>
-                    <h3>Structural Code Foundations</h3>
-                    <p>Deconstructing algorithm problems, pointer-based structures, memory address allocations, and vector calculations.</p>
-                </div>
+          <!-- Project 3: Security camera -->
+          <article class="spec-row">
+            <div>
+              <!-- REPLACE: <img src="images/dev/camera.png" alt="Telegram alert with a snapshot and caption"> -->
+              <div class="ph"><span>Screenshot of a Telegram alert</span></div>
             </div>
-        </section>
-
-        <aside class="right-status-sidebar">
-            <h2>// SYS_STATUS</h2>
-            <div class="box status-box">
-                <p>Focus: <span class="status-val-green">Scattered</span></p>
-                <p>Build: <span class="status-val-yellow">Shipping</span></p>
-                <p>Coffee: <span class="status-val-green">Active</span></p>
+            <div>
+              <span class="status">Working prototype</span>
+              <h3>Smart security camera alerts</h3>
+              <p class="what">Watches a camera feed, decides when something real is happening, and sends a Telegram alert with a short clip and a one-line description.</p>
+              <ul class="built">
+                <li>Cheap motion detection runs first; YOLOv8n only checks frames that moved, which keeps it fast on a laptop CPU.</li>
+                <li>Face recognition labels known people and flags unknown ones.</li>
+                <li>Saves a clip from just before to just after each event, and Gemini writes a caption and a daily summary.</li>
+              </ul>
+              <ul class="tags">
+                <li>Python</li><li>OpenCV</li><li>YOLOv8n</li><li>SQLite</li><li>Telegram Bot API</li>
+              </ul>
+              <div class="links">
+                <!-- TODO: put the real link here -->
+                <a href="#">View code</a>
+              </div>
             </div>
+          </article>
 
-            <h2>// WRITEUPS</h2>
-            <div class="box blog-box">
-                <span class="blog-date">2026.06.10</span>
-                <a href="#" class="blog-link">Memory Reference Tracking in Node Links</a>
-            </div>
-        </aside>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <h2>About me</h2>
+            <p>I started as a graphic designer in 2021 and moved into UX design a year later. For three years I designed products for clients, including freelance work on Upwork, where I kept a 100% job completion record.</p>
+            <p>My UX work covered user interviews, surveys, usability tests, A/B tests and competitive analysis. I also analysed large sets of historic data for a wildlife identification platform.</p>
+            <p>Now I'm doing my MCA and moving into software engineering. Design taught me to start with the person using the product. Engineering lets me build it myself. I'm looking for software engineering internships and entry-level roles, and I'm especially interested in robotics and embedded systems.</p>
+          </div>
 
-    <footer>
-        <p>// EOF - Built with terminal aesthetics</p>
-    </footer>
+          <ol class="timeline" aria-label="Career timeline">
+            <li><span class="when">2021</span><span class="role">Bachelor's degree</span></li>
+            <li><span class="when">2021 – 2022</span><span class="role">Graphic designer</span></li>
+            <li><span class="when">2022 – 2025</span><span class="role">UX designer</span><span class="muted">Client work, including freelance projects on Upwork</span></li>
+            <li><span class="when">Now</span><span class="role">MCA student, building software</span><span class="muted">C++, Python, MERN, ROS 2</span></li>
+          </ol>
+        </div>
 
+        <div class="skills">
+          <div>
+            <h4>Design</h4>
+            <ul class="tags"><li>User research</li><li>Usability testing</li><li>A/B testing</li><li>Wireframing</li><li>Prototyping</li><li>Figma</li></ul>
+          </div>
+          <div>
+            <h4>Programming</h4>
+            <ul class="tags"><li>C++</li><li>Python</li><li>JavaScript</li><li>Data structures and algorithms</li></ul>
+          </div>
+          <div>
+            <h4>Web and systems</h4>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>React</li><li>MongoDB</li><li>ROS 2</li><li>ESP32</li><li>OpenCV</li><li>Git</li></ul>
+          </div>
+          <div>
+            <h4>Data</h4>
+            <ul class="tags"><li>pandas</li><li>NumPy</li><li>SQL</li><li>scikit-learn</li><li>Tableau</li><li>Power BI</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <h2>Have a role or a project in mind?</h2>
+        <p class="muted">Email is the fastest way to reach me.</p>
+        <!-- TODO: put your real email in BOTH places below -->
+        <a class="contact-email" href="mailto:your.email@example.com">your.email@example.com</a>
+        <ul class="contact-links">
+          <li><a href="https://github.com/Voidcoder-ak">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>   <!-- TODO: LinkedIn link -->
+          <li><a href="#">Upwork</a></li>     <!-- TODO: Upwork link -->
+          <li><a href="resume.pdf">Resume (PDF)</a></li> <!-- TODO: add resume.pdf to the main folder -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span class="year">2026</span> Akshat Kumar Kashyap</span>
+      <span>Designed and built by me. Hosted on GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

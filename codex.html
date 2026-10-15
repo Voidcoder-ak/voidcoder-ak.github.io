@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codex Matching Path — Akshat Kumar Kashyap</title>
+  <meta name="description" content="UX case study: redesigning how researchers match photos of individual wild animals in Codex, for WildMe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Akshat Kumar Kashyap, home">AK</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html#design">Design</a>
+        <a href="index.html#engineering">Engineering</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= CASE STUDY HERO ================= -->
+    <section class="cs-hero">
+      <div class="wrap">
+        <a class="back" href="index.html#design">Back to all work</a>
+        <h1>Codex Matching Path</h1>
+        <p class="lede">Codex lets researchers, scientists and citizen scientists work together to match animal sightings and collect detailed data about individual animals. I redesigned the page where that matching happens.</p>
+
+        <dl class="facts">
+          <div><dt>Client</dt><dd>WildMe</dd></div>
+          <div><dt>Role</dt><dd>UX designer (generalist)</dd></div>
+          <div><dt>Timeline</dt><dd>Jan – Oct 2023</dd></div>
+          <div><dt>Work</dt><dd>Research, interaction, visual design, prototyping, testing</dd></div>
+        </dl>
+
+        <figure class="cs-cover">
+          <!-- REPLACE: <img src="images/codex/cover.png" alt="Final Codex match page shown on a tablet"> -->
+          <div class="ph"><span>Cover: final match page on a tablet</span></div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="wrap cs-body">
+
+      <!-- Table of contents (desktop only) -->
+      <aside class="toc" aria-label="On this page">
+        <span class="toc-title">On this page</span>
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#problem">The problem</a></li>
+          <li><a href="#understand">Understanding the user</a></li>
+          <li><a href="#start">Starting the design</a></li>
+          <li><a href="#refine">Refining the design</a></li>
+          <li><a href="#forward">Moving forward</a></li>
+        </ol>
+      </aside>
+
+      <article class="cs-content">
+
+        <!-- ================= OVERVIEW ================= -->
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>Codex combines structured wildlife research with artificial intelligence, citizen science and computer vision. Its goal is to speed up population analysis and find new insights that help fight extinction.</p>
+
+          <h3>Why we started</h3>
+          <p>Some users told us a competitor had better features and a nicer experience. We wanted to find out if that was true, and if we could make our product better. So we planned carefully from the start.</p>
+          <p>We followed the design thinking process. Along the way we faced real challenges: finding out what people actually wanted, handling very different opinions on how a feature should work, language barriers, and understanding the technical side of the product. We solved them one at a time.</p>
+          <p>We kept improving the designs until the result matched what competitors offered and went further. We listened closely to users, and the matching page became much easier to use.</p>
+
+          <h3>Research goals</h3>
+          <ol>
+            <li>Find out what problems users have when they try to match animals.</li>
+            <li>Find out which features make the biggest difference to how users feel about matching.</li>
+            <li>Make matching easier and more straightforward.</li>
+          </ol>
+
+          <h3>Research questions</h3>
+          <ol>
+            <li>How do users use Wildbook day to day?</li>
+            <li>What problems do users run into when matching individuals in Wildbook?</li>
+            <li>How often do users skip steps because they are unclear or confusing?</li>
+            <li>Which features do users ask for most, and why do they want them?</li>
+            <li>How can we improve the matching flow so it is easier and faster?</li>
+            <li>How do users see Wildbook compared with competing products like Honey Veli?</li>
+          </ol>
+        </section>
+
+        <!-- ================= THE PROBLEM ================= -->
+        <section id="problem">
+          <div class="callout">
+            <h3>The problem</h3>
+            <ul>
+              <li>Matching animals was slow and tiring, and some matches took far too long.</li>
+              <li>Technical limits were one of the biggest problems users faced.</li>
+              <li>Many users didn't know which tools existed or how to use them.</li>
+              <li>A large share of users were older and less familiar with the product.</li>
+              <li>The interface was cluttered.</li>
+            </ul>
+          </div>
+
+          <h3>Where we started: the existing tools</h3>
+          <p>Before designing anything, we studied how matching worked in the tools users already had: Flukebook and the 2022 version of Codex.</p>
+          <div class="fig-pair">
+            <figure>
+              <!-- REPLACE: <img src="images/codex/flukebook.png" alt="Flukebook matching page"> -->
+              <div class="ph"><span>Flukebook matching page</span></div>
+              <figcaption class="hand">Flukebook</figcaption>
+            </figure>
+            <figure>
+              <!-- REPLACE: <img src="images/codex/qa-codex-2022.png" alt="QA Codex 2022 review match candidates page"> -->
+              <div class="ph"><span>QA Codex 2022 match page</span></div>
+              <figcaption class="hand">QA Codex 2022</figcaption>
+            </figure>
+          </div>
+
+          <h3>Design process</h3>
+          <p>We used the five stages of design thinking. The dotted lines show where testing sent us back to an earlier stage.</p>
+          <!-- Drawn in code, so it stays sharp and needs no image file -->
+          <svg class="process-svg" viewBox="0 0 560 230" role="img" aria-label="Design thinking: Empathise, Define, Ideate, Prototype, Test, with loops back from Prototype to Define and from Test to Ideate">
+            <defs>
+              <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" fill="#5a45c6"/>
+              </marker>
+            </defs>
+            <line class="arrow" x1="94" y1="60" x2="166" y2="60" marker-end="url(#ah)"/>
+            <line class="arrow" x1="210" y1="104" x2="210" y2="146" marker-end="url(#ah)"/>
+            <line class="arrow" x1="254" y1="170" x2="326" y2="170" marker-end="url(#ah)"/>
+            <line class="arrow" x1="414" y1="170" x2="466" y2="170" marker-end="url(#ah)"/>
+            <path class="arrow loop" d="M370 126 C 360 70, 300 40, 256 52" marker-end="url(#ah)"/>
+            <path class="arrow loop" d="M510 214 C 470 240, 280 236, 246 196" marker-end="url(#ah)"/>
+            <circle cx="50" cy="60" r="44"/><text x="50" y="65">Empathise</text>
+            <circle cx="210" cy="60" r="44"/><text x="210" y="65">Define</text>
+            <circle cx="210" cy="170" r="44"/><text x="210" y="175">Ideate</text>
+            <circle cx="370" cy="170" r="44"/><text x="370" y="175">Prototype</text>
+            <circle cx="510" cy="170" r="44"/><text x="510" y="175">Test</text>
+          </svg>
+        </section>
+
+        <!-- ================= 1. UNDERSTANDING THE USER ================= -->
+        <section id="understand">
+          <div class="phase"><span class="num">1</span><h2>Understanding the user</h2></div>
+          <p class="phase-steps">User research, affinity mapping, personas</p>
+
+          <h3>User research</h3>
+          <p>We began by setting goals, defining the problem, and writing the questionnaire and script for our first round of user interviews.</p>
+          <p>The interviews threw us a curveball. People came from very different backgrounds, which was valuable but also hard. One person spoke very fast; another struggled with English. I adjusted as we went, and the interviews took longer than planned. Still, we learned a lot about how people use the product and what problems they face. Sorting through it all took time, but it gave us what we needed to design and test later.</p>
+          <p>I learned a lot about different people and their needs, and how important clear communication is. I now work on talking clearly with anyone, wherever they're from.</p>
+
+          <h3>Organising what we learned</h3>
+          <div class="fig">
+            <!-- REPLACE: <img src="images/codex/affinity-1.jpg" alt="Affinity map of challenges on sticky notes"> -->
+            <div class="ph"><span>Affinity map photo (challenges)</span></div>
+            <figcaption>
+              <span class="hand">Affinity map</span>
+              <p>We put everything from the interviews onto sticky notes and grouped them. This showed patterns we then used for the first designs.</p>
+            </figcaption>
+          </div>
+          <div class="fig-pair">
+            <!-- REPLACE with real photos -->
+            <div class="ph"><span>Affinity map photo (what can be improved)</span></div>
+            <div class="ph"><span>Affinity map photo (matching process)</span></div>
+          </div>
+
+          <h3>What we measured (KPIs)</h3>
+          <ol>
+            <li>Time taken to match individuals.</li>
+            <li>Skip rate: how often users skip steps because they're confusing.</li>
+            <li>System Usability Scale (a standard usability score).</li>
+            <li>User feedback.</li>
+            <li>How complex users felt the design was.</li>
+            <li>How easy the website was to use.</li>
+            <li>How comfortable users felt while matching.</li>
+          </ol>
+
+          <h3>Personas</h3>
+
+          <div class="persona">
+            <!-- REPLACE: <img src="images/codex/persona-arise.png" alt="Illustrated portrait of Arise"> -->
+            <div class="ph"><span>Arise</span></div>
+            <div>
+              <dl class="facts">
+                <dt>Name</dt><dd>Arise</dd>
+                <dt>Age</dt><dd>42</dd>
+                <dt>Job</dt><dd>High school science teacher</dd>
+                <dt>Family</dt><dd>Wife and one child</dd>
+                <dt>Location</dt><dd>Sydney, Australia</dd>
+              </dl>
+              <blockquote>"I want to contribute to wildlife conservation for the coming generations."</blockquote>
+              <h4>Problem</h4>
+              <p>He finds it hard to get accessible, easy tools for joining conservation projects. He lacks the technical skills to use complex identification tools, which limits how much he can contribute, even though he is very keen.</p>
+              <h4>Story</h4>
+              <p>Arise has taught high school biology for over 15 years and has a bachelor's degree in environmental science. He spends weekends volunteering for a local conservation group, monitoring wildlife and their habitats. He doesn't have deep research experience, but he really wants to help protect endangered species.</p>
+              <h4>Goals</h4>
+              <ol>
+                <li>Make a real contribution to wildlife conservation through hands-on work.</li>
+                <li>Learn more and share it with his students to inspire future conservationists.</li>
+                <li>Use new technology to collect data and identify animals.</li>
+              </ol>
+              <h4>Pain points</h4>
+              <ol>
+                <li>Struggles to find easy tools for citizen science.</li>
+                <li>Feels overwhelmed by complex research methods and identification tools.</li>
+                <li>Has limited time between teaching, volunteering and family.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="persona">
+            <!-- REPLACE: <img src="images/codex/persona-pegasus.png" alt="Illustrated portrait of Pegasus"> -->
+            <div class="ph"><span>Pegasus</span></div>
+            <div>
+              <dl class="facts">
+                <dt>Name</dt><dd>Pegasus</dd>
+                <dt>Age</dt><dd>34</dd>
+                <dt>Job</dt><dd>PhD student</dd>
+                <dt>Family</dt><dd>Lives with her boyfriend and a dog</dd>
+                <dt>Location</dt><dd>Portland, Oregon, USA</dd>
+              </dl>
+              <h4>Problem</h4>
+              <p>She manages and identifies huge amounts of wildlife data. Traditional identification methods are slow and manual, which stops her from scaling up matching and finding new insights.</p>
+              <h4>Story</h4>
+              <p>Pegasus is a biologist with a master's degree, now doing her PhD. She has worked in the field for over six years on whale populations and conservation, including fin whales. She is comfortable with technology and likes bringing new tools into her research.</p>
+              <h4>Goals</h4>
+              <ol>
+                <li>Contribute to conservation with her knowledge and skills.</li>
+                <li>Use AI and machine learning to speed up matching and data collection.</li>
+                <li>Work with other researchers and citizen scientists on global problems.</li>
+              </ol>
+              <h4>Pain points</h4>
+              <ol>
+                <li>Managing large amounts of data from many sources and formats.</li>
+                <li>Manual matching and tracking takes a lot of time and effort.</li>
+                <li>Hard to engage and work with citizen scientists and other researchers.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= 2. STARTING THE DESIGN ================= -->
+        <section id="start">
+          <div class="phase"><span class="num">2</span><h2>Starting the design</h2></div>
+          <p class="phase-steps">Wireframes, low fidelity, high fidelity, prototype, usability study</p>
+
+          <h3>First ideas after research</h3>
+          <p>Based on user needs, market trends and project goals, I sketched the first ideas for the match page. We had many directions, so we chose two versions to test in a usability study.</p>
+          <div class="fig">
+            <div class="ph"><span>Design A wireframe</span></div>
+            <figcaption><span class="hand">Design A</span><p>Two images side by side, with the candidate list underneath.</p></figcaption>
+          </div>
+          <div class="fig">
+            <div class="ph"><span>Design B wireframe</span></div>
+            <figcaption><span class="hand">Design B</span><p>Adds a thumbnail strip under each image and moves actions into a side panel.</p></figcaption>
+          </div>
+
+          <h3>Helping users get started: onboarding</h3>
+          <p>Many users had little experience with technology, and technical terms made the tool hard to understand. So we added onboarding screens to help people get started.</p>
+          <div class="fig-pair">
+            <figure>
+              <div class="ph"><span>Guided tour wireframe</span></div>
+              <figcaption class="hand">Guided tour</figcaption>
+            </figure>
+            <figure>
+              <div class="ph"><span>Catalog style wireframe</span></div>
+              <figcaption class="hand">Catalog style</figcaption>
+            </figure>
+          </div>
+
+          <h3>Flagging a match</h3>
+          <p>Clicking the flag button opens a simple form to report a wrong match. This helps the team improve match accuracy, because users can tell us about problems as soon as they see them.</p>
+          <div class="fig-pair">
+            <figure>
+              <div class="ph"><span>Flag popup, option 1</span></div>
+              <figcaption class="hand">Option 1</figcaption>
+            </figure>
+            <figure>
+              <div class="ph"><span>Flag popup, option 2</span></div>
+              <figcaption class="hand">Option 2</figcaption>
+            </figure>
+          </div>
+
+          <h3>Helping users trust the results</h3>
+          <p>Users needed to know how accurate a match was. By explaining the score, we help them trust the results and understand how precise they are.</p>
+          <div class="fig">
+            <div class="ph"><span>"Why you should trust our score" tooltip wireframe</span></div>
+            <figcaption><span class="hand">After iteration</span><p>We first planned a detailed explanation for every match. After iterating, we switched to one general explanation of how scores work, which was clearer.</p></figcaption>
+          </div>
+
+          <h3>Showing what's selected</h3>
+          <p>Clear highlights for selected items and obvious buttons help users move through the page and finish tasks faster.</p>
+          <div class="fig-pair">
+            <figure>
+              <div class="ph"><span>Highlighted thumbnail wireframe</span></div>
+              <figcaption class="hand">Clear highlight for the selected image</figcaption>
+            </figure>
+            <figure>
+              <div class="ph"><span>Candidate list with checkboxes</span></div>
+              <figcaption class="hand">Checkboxes to compare several matches</figcaption>
+            </figure>
+          </div>
+
+          <h3>Low fidelity</h3>
+          <p>Low-fidelity designs showed us roughly how the final screens would look. There were many rounds of changes from the early wireframes. It took longer than expected, but after a lot of discussion we reached clear decisions.</p>
+          <div class="fig-pair">
+            <figure><div class="ph"><span>Design A, low fidelity</span></div><figcaption class="hand">Design A</figcaption></figure>
+            <figure><div class="ph"><span>Design B, low fidelity</span></div><figcaption class="hand">Design B</figcaption></figure>
+          </div>
+
+          <h3>High fidelity</h3>
+          <p>Once we got the green light, we built high-fidelity mockups. They looked much better than the older designs (Wildbook and early QA Codex). I personally preferred Design B, but to stay objective we ran a usability study.</p>
+          <div class="fig-pair">
+            <figure><div class="ph"><span>Design A, high fidelity</span></div><figcaption class="hand">Design A</figcaption></figure>
+            <figure><div class="ph"><span>Design B, high fidelity</span></div><figcaption class="hand">Design B</figcaption></figure>
+          </div>
+
+          <h3>Usability study results</h3>
+          <ul>
+            <li>Users preferred Design B overall.</li>
+            <li>Onboarding was a draw, so we let product requirements decide.</li>
+            <li>Users liked some parts of each design.</li>
+          </ul>
+          <p>As the project went on, technical limits and changing product requirements made us rethink parts of the final design.</p>
+
+          <div class="table-wrap">
+            <table>
+              <caption class="muted" style="caption-side: bottom; padding: 10px; font-size: .85rem;">Which design each user preferred. A dash means the feature wasn't tested.</caption>
+              <thead>
+                <tr><th scope="col">Feature</th><th scope="col">User A</th><th scope="col">User B</th><th scope="col">User C</th><th scope="col">User D</th><th scope="col">Result</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Onboarding screens</td><td>A</td><td>A</td><td>B</td><td>B</td><td>Draw</td></tr>
+                <tr><td>Match page, overall</td><td>B</td><td>B</td><td>B</td><td>B</td><td class="win">B</td></tr>
+                <tr><td>Match page, image carousel</td><td>B</td><td>B</td><td>B</td><td>B</td><td class="win">B</td></tr>
+                <tr><td>Match page, action buttons</td><td>B</td><td>B</td><td>B</td><td>B</td><td class="win">B</td></tr>
+                <tr><td>Flag popup</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+                <tr><td>Dismiss popup</td><td>B</td><td>B</td><td>A</td><td>A</td><td>Draw</td></tr>
+                <tr><td>Rerun ID popup</td><td>B</td><td>–</td><td>B</td><td>B</td><td class="win">B</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ================= 3. REFINING THE DESIGN ================= -->
+        <section id="refine">
+          <div class="phase"><span class="num">3</span><h2>Refining the design</h2></div>
+          <p class="phase-steps">Final high-fidelity mockup, accessibility</p>
+
+          <h3>Final mockup</h3>
+          <p>After research, usability testing and many rounds of changes, we reached the final match page.</p>
+          <p>We made some tough calls, like removing flagging and zoom controls for now. They aren't essential yet, but we see their value and plan to bring them back later.</p>
+
+          <figure style="margin: 28px 0;">
+            <!-- REPLACE: <img src="images/codex/final-annotated.png" alt="Final match page with numbered notes"> -->
+            <div class="ph" style="--ratio: 16 / 9;"><span>Final match page (add red numbers 1–6 on the image to match the notes below)</span></div>
+          </figure>
+          <ol class="notes-list">
+            <li><strong>Inspect match area.</strong> Turning on this toggle highlights the part of the animal the algorithm used to match.</li>
+            <li><strong>View tutorial.</strong> Lets users see the onboarding screens again if they forget what a tool does.</li>
+            <li><strong>Image carousel.</strong> Shows different photos of the same animal.</li>
+            <li><strong>Flag removed.</strong> Useful, but lower on the priority list for now.</li>
+            <li><strong>Match status.</strong> Users set whether a match is pending, completed or undetermined.</li>
+            <li><strong>"No match" and "Confirm match".</strong> A simpler approach to "no match" saves space and reduces confusion by putting fewer options in the bottom bar.</li>
+          </ol>
+
+          <div class="fig-pair">
+            <div class="ph"><span>Final design, screen 2</span></div>
+            <div class="ph"><span>Final design, screen 3</span></div>
+          </div>
+
+          <h3>Accessibility</h3>
+          <div class="todo"><strong>To check:</strong> the old site had placeholder text here. I wrote these from what the final design shows. Edit them to match what you actually did.</div>
+          <ul>
+            <li><strong>Visual design:</strong> high-contrast text and one accent colour for actions, so the important buttons are easy to find.</li>
+            <li><strong>Layout:</strong> the two photos sit side by side at the same size, so users can compare them without scrolling.</li>
+            <li><strong>Navigation and components:</strong> clear selected states and labelled buttons, so users always know where they are and what a button does.</li>
+          </ul>
+        </section>
+
+        <!-- ================= 4. MOVING FORWARD ================= -->
+        <section id="forward">
+          <div class="phase"><span class="num">4</span><h2>Moving forward</h2></div>
+          <p class="phase-steps">Takeaways, next steps</p>
+
+          <h3>Impact</h3>
+          <p>The usability studies gave a positive response to the new design. Users were interested in the new interface and how it could make their work easier.</p>
+
+          <h3>What I learned</h3>
+          <p>Research, talking to people and getting feedback taught me to see things from the user's side. We need to think about everyone who might use the product, and when there are barriers, find a way to remove them.</p>
+
+          <h3>Next steps</h3>
+          <p>As testing continues, I'm excited about what this could mean for the animals too. It's about making matching work for people, and also for animals whose photos are easier to match when stacked vertically.</p>
+          <p>In upcoming tests and brainstorming sessions, I want to keep improving the experience, both for the researchers using the tool and for the conservation work it supports.</p>
+
+          <div class="next-case">
+            <span class="muted">Next case study</span>
+            <a href="restro.html">Restro</a>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span class="year">2026</span> Akshat Kumar Kashyap</span>
+      <span>Designed and built by me. Hosted on GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
