@@ -451,3 +451,19 @@ td.win { font-weight: 700; color: var(--violet); }
   .fig-pair { grid-template-columns: 1fr; }
   .cs-hero .facts { grid-template-columns: 1fr; }
 }
+
+/* ---------- 7. Real images inside case studies ---------- */
+.cs-cover img,
+.cs-content img,
+.case-row img {
+  width: 100%; height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.case-row img { aspect-ratio: auto; } /* show the whole picture, no cropping */
+
+/* Tables where text should read left to right (e.g. journey map) */
+.table-left th, .table-left td { text-align: left; vertical-align: top; }
+.table-left tbody th { background: var(--violet-soft); color: var(--ink); font-weight: 600; white-space: nowrap; }
+.table-left td { min-width: 140px; }

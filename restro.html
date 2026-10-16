@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Restro — Akshat Kumar Kashyap</title>
-  <meta name="description" content="UX case study: Restro, a food delivery app for unique local restaurants, on mobile and web.">
+  <meta name="description" content="UX case study: Restro, a restaurant ordering and delivery app with monthly meal subscription plans.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,70 +28,305 @@
 
   <main id="main">
 
+    <!-- ================= CASE STUDY HERO ================= -->
     <section class="cs-hero">
       <div class="wrap">
         <a class="back" href="index.html#design">Back to all work</a>
         <h1>Restro</h1>
-        <p class="lede">A food delivery app for unique local restaurants. Our research found ways to improve the experience, so we added a "Discover" section, simplified checkout and added personal recommendations.</p>
+        <p class="lede">A restaurant ordering and delivery app with monthly meal subscription plans, for people who skip breakfast or lunch because their days are too busy.</p>
+
         <dl class="facts">
-          <div><dt>Platform</dt><dd>Mobile app and website</dd></div>
-          <div><dt>Role</dt><dd>UX designer</dd></div>
-          <div><dt>Timeline</dt><dd>Add dates</dd></div>
-          <div><dt>Tools</dt><dd>Add tools</dd></div>
+          <div><dt>Role</dt><dd>Lead UX designer, UX researcher, visual designer</dd></div>
+          <div><dt>Timeline</dt><dd>Feb – May (4 months)</dd></div>
+          <div><dt>Platform</dt><dd>Mobile app</dd></div>
+          <div><dt>Work</dt><dd>Research, wireframes, prototypes, usability testing</dd></div>
         </dl>
+
         <figure class="cs-cover">
-          <!-- REPLACE: <img src="images/restro/cover.png" alt="Restro screens on several phones"> -->
-          <div class="ph"><span>Cover: Restro screens on several phones</span></div>
+          <img src="images/restro/cover.jpg" alt="Five Restro app screens shown on phones: home, subscription plans, splash screen, meal plan and current plan">
         </figure>
       </div>
     </section>
 
     <div class="wrap cs-body">
+
       <aside class="toc" aria-label="On this page">
         <span class="toc-title">On this page</span>
         <ol>
           <li><a href="#overview">Overview</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#mobile">Mobile app</a></li>
-          <li><a href="#web">Website</a></li>
-          <li><a href="#outcome">Outcome</a></li>
+          <li><a href="#understand">Understanding the user</a></li>
+          <li><a href="#start">Starting the design</a></li>
+          <li><a href="#refine">Refining the design</a></li>
+          <li><a href="#forward">Going forward</a></li>
         </ol>
       </aside>
 
       <article class="cs-content">
-        <div class="todo"><strong>To fill in:</strong> this case study is a short version for now. Add your research, wireframes and final screens to the sections below, following the Codex page as an example.</div>
+
+        <!-- ================= OVERVIEW ================= -->
         <section id="overview">
           <h2>Overview</h2>
-          <p>Our UX case study of the food delivery app found several chances to improve the experience. We added a "Discover" section for unique local restaurants, simplified the checkout process and added personal recommendations. Together these changes made the app easier and more enjoyable to use.</p>
-          <p>We then designed a web version. It keeps the same experience across platforms while using different tools, which shows how the design system stays consistent.</p>
-        </section>
-        <section id="research">
-          <h2>Research</h2>
-          <p>Add who you talked to, what you asked, and the main findings.</p>
-          <div class="ph"><span>Research photo or affinity map</span></div>
-        </section>
-        <section id="mobile">
-          <h2>Mobile app</h2>
-          <p>Add the key mobile screens and why you designed them that way.</p>
-          <div class="fig-pair">
-            <div class="ph"><span>Discover screen</span></div>
-            <div class="ph"><span>Checkout screen</span></div>
+          <p>Restro is a restaurant ordering and delivery app. Along with regular food orders, it offers monthly meal subscription plans, so regular meals arrive on time without ordering every day.</p>
+
+          <div class="callout">
+            <h3>The problem</h3>
+            <ul>
+              <li>People miss breakfast or lunch because of busy schedules. Ordering and delivery take time, so sometimes they skip the meal completely.</li>
+              <li>Restaurants needed an easy way to offer monthly subscriptions to their customers.</li>
+            </ul>
           </div>
-        </section>
-        <section id="web">
-          <h2>Website</h2>
-          <p>Show how the same experience works on a larger screen.</p>
-          <div class="ph"><span>Restro website, home page</span></div>
-        </section>
-        <section id="outcome">
-          <h2>Outcome</h2>
-          <p>Add what changed for users, and what you learned.</p>
+
+          <h3>The goal</h3>
+          <ul>
+            <li>Make daily food ordering simple, and get meals to users on time.</li>
+            <li>Design a way for users to manage their subscriptions and start one easily.</li>
+          </ul>
+
+          <h3>My role</h3>
+          <p>I was the lead UX designer, UX researcher and visual designer, in charge of the app from idea to delivery.</p>
+          <p>My work covered interviews, paper and digital wireframes, low- and high-fidelity prototypes, usability research, accessibility, design iterations, information architecture and responsive design.</p>
         </section>
 
-        <div class="next-case">
-          <span class="muted">Next case study</span>
-          <a href="learning-bin.html">Learning Bin</a>
-        </div>
+        <!-- ================= 1. UNDERSTANDING THE USER ================= -->
+        <section id="understand">
+          <div class="phase"><span class="num">1</span><h2>Understanding the user</h2></div>
+          <p class="phase-steps">User research, personas, problem statements, user journey maps</p>
+
+          <h3>What the research showed</h3>
+          <p>At first we thought the main problem was delivery and its timing. After research, we found consumers did have some delivery issues worth fixing.</p>
+          <p>But interviews and surveys showed a bigger issue: people often missed breakfast or lunch because of their busy schedules. A subscription would help them, and also students and anyone else who wants regular daily meals.</p>
+
+          <h3>Pain points</h3>
+          <ol>
+            <li><strong>No time to order.</strong> Many users are so busy they skip meals. A monthly plan, where you choose what to eat and on which days, would remove that stress.</li>
+            <li><strong>Choosing what to eat.</strong> Users have little time to decide, so smart recommendations based on what they ate and liked before are useful.</li>
+            <li><strong>Delivery people can't find the address.</strong> Delivery partners often struggle to find the location. Letting users add directions for the delivery person would help.</li>
+          </ol>
+
+          <h3>Personas</h3>
+
+          <div class="persona">
+            <!-- REPLACE: <img src="images/restro/persona-sakshi.png" alt="Portrait of Sakshi"> -->
+            <div class="ph"><span>Sakshi</span></div>
+            <div>
+              <dl class="facts">
+                <dt>Name</dt><dd>Sakshi</dd>
+                <dt>Age</dt><dd>29</dd>
+                <dt>Education</dt><dd>MD</dd>
+                <dt>Job</dt><dd>Doctor</dd>
+                <dt>Family</dt><dd>Single, lives alone</dd>
+                <dt>Hometown</dt><dd>Ambala, Haryana</dd>
+              </dl>
+              <blockquote>"I have a very busy schedule and usually have no time to eat breakfast."</blockquote>
+              <h4>Problem</h4>
+              <p>Sakshi needs a weekly or monthly breakfast plan, because she misses meals often.</p>
+              <h4>Story</h4>
+              <p>Sakshi and her coworkers work more than 60 hours a week, so they have very little time to eat, especially breakfast. She often misses breakfast because there's no delivery option or the delivery is late. She orders 3–6 times a week, sometimes more. Deciding what to eat is another challenge. She'd like to pre-order meals and have a few go-to breakfast options.</p>
+            </div>
+          </div>
+
+          <div class="persona">
+            <!-- REPLACE: <img src="images/restro/persona-shantanu.png" alt="Portrait of Shantanu"> -->
+            <div class="ph"><span>Shantanu</span></div>
+            <div>
+              <dl class="facts">
+                <dt>Name</dt><dd>Shantanu</dd>
+                <dt>Age</dt><dd>24</dd>
+                <dt>Education</dt><dd>B.Tech, Computer Science</dd>
+                <dt>Job</dt><dd>Software engineer</dd>
+                <dt>Family</dt><dd>Single, lives with his parents</dd>
+                <dt>Hometown</dt><dd>New Delhi</dd>
+              </dl>
+              <blockquote>"I order 1–2 times a week, so I don't need constant notifications and ads reminding me to order food."</blockquote>
+              <h4>Story</h4>
+              <p>Shantanu orders food less than 3 times a week, usually in the evening and mostly on weekends, when he wants something he doesn't eat at home. He runs into payment issues and too many ads and notifications. The app also feels slow while he browses the menu and decides what to order.</p>
+            </div>
+          </div>
+
+          <h3>User journey map</h3>
+          <p>The journey map showed how users complete each task and how they feel at each step. Knowing the feeling at each step showed us where to improve.</p>
+          <p class="muted">Persona: Shantanu. Goal: order food simply and easily.</p>
+
+          <div class="table-wrap">
+            <table class="table-left">
+              <thead>
+                <tr><th scope="col">Action</th><th scope="col">Sign in and address</th><th scope="col">Choose what to eat</th><th scope="col">Review order and payment</th><th scope="col">Check order status</th><th scope="col">Take delivery</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Tasks</th>
+                  <td>Log in to the app. Select the delivery address.</td>
+                  <td>Choose food from the menu. Add instructions for the order.</td>
+                  <td>Review the order. Check payment options. Check the confirmation.</td>
+                  <td>Track order status. See estimated delivery time.</td>
+                  <td>Take the delivery. Check the order is correct.</td></tr>
+                <tr><th scope="row">Feelings</th>
+                  <td>Excited to order. Hoping the delivery person finds the address.</td>
+                  <td>Happy to see lots of options. Careful while writing instructions.</td>
+                  <td>Focused while reviewing. Happy the food is ordered.</td>
+                  <td>Restless while tracking. Happy it will arrive soon.</td>
+                  <td>Frustrated when the delivery person can't find the address. Happy with the food.</td></tr>
+                <tr><th scope="row">Opportunities</th>
+                  <td>A better way to select the address</td>
+                  <td>Fewer ads, smoother browsing</td>
+                  <td>Better discounts and coupons at checkout</td>
+                  <td>Better time estimates</td>
+                  <td>Better map features to pin the address</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Competitive audit</h3>
+          <p>We compared four local competitors (two direct, two indirect) to see if users could complete the core tasks in each app, and where each one did well or badly.</p>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/audit-1.jpg" alt="Competitive audit spreadsheet comparing four restaurants on general information, first impressions and interaction">
+          </figure>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/audit-2.jpg" alt="Second part of the competitive audit comparing visual design and content">
+          </figure>
+        </section>
+
+        <!-- ================= 2. STARTING THE DESIGN ================= -->
+        <section id="start">
+          <div class="phase"><span class="num">2</span><h2>Starting the design</h2></div>
+          <p class="phase-steps">Paper wireframes, digital wireframes, low-fidelity prototype, usability studies</p>
+
+          <h3>Paper wireframes</h3>
+          <p>Before drawing, we listed everything the screen needed. Then I drew five different versions of the same screen with different component styles, marked the best parts of each, and combined them into one polished wireframe.</p>
+          <!-- REPLACE: <img src="images/restro/paper-wireframes.jpg" alt="Five paper wireframe variations of the home screen"> -->
+          <div class="ph" style="--ratio: 16 / 7;"><span>Paper wireframes (five variations)</span></div>
+
+          <h3>Digital wireframes</h3>
+          <div class="fig">
+            <img src="images/restro/wire-home.jpg" alt="Home screen wireframe with notes on the tabs, subscription banner and food categories">
+            <figcaption>
+              <span class="hand">Home screen</span>
+              <p>People can start adding food from the first screen. Three tabs move between the menu, active plans and reorder. A banner sends users who want to explore subscription plans to the plans page, and food items are sorted into categories.</p>
+            </figcaption>
+          </div>
+          <div class="fig">
+            <img src="images/restro/wire-plan.jpg" alt="Meal plan wireframe with notes on delivery days and meals">
+            <figcaption>
+              <span class="hand">Plan screen</span>
+              <p>Shows the days and meals in a plan, which users can change one by one, plus the price and shipping charges. The delivery days section shows when meals will arrive and can be edited. The goal was a fully customisable plan.</p>
+            </figcaption>
+          </div>
+
+          <h3>Low-fidelity prototype</h3>
+          <p>The main user flow is choosing a subscription plan and checking out.</p>
+          <!-- REPLACE: <img src="images/restro/lofi.png" alt="Low-fidelity prototype of the home screen"> -->
+          <div class="ph" style="--ratio: 16 / 8;"><span>Low-fidelity prototype</span></div>
+
+          <h3>User storyboards</h3>
+          <div class="fig-pair">
+            <figure>
+              <img src="images/restro/storyboard-1.jpg" alt="Hand-drawn big-picture storyboard: Sakshi misses breakfast, finds the app, subscribes to a monthly plan and gets food on time">
+              <figcaption class="hand">The big picture</figcaption>
+            </figure>
+            <figure>
+              <img src="images/restro/storyboard-2.jpg" alt="Hand-drawn close-up storyboard of the app flow from opening the app to checkout">
+              <figcaption class="hand">Close-up of the app flow</figcaption>
+            </figure>
+          </div>
+
+          <h3>Usability study</h3>
+          <dl class="facts" style="grid-template-columns: repeat(2, auto); gap: 6px 32px;">
+            <dt>Study type</dt><dd>Unmoderated usability study</dd>
+            <dt>Location</dt><dd>India, remote</dd>
+            <dt>Participants</dt><dd>5</dd>
+            <dt>Length</dt><dd>20–40 minutes</dd>
+          </dl>
+
+          <h3>Affinity map</h3>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/affinity.jpg" alt="Affinity diagram on a whiteboard with sticky notes grouped into choosing a plan, choosing a meal, checkout, buttons and selections, and others">
+          </figure>
+
+          <h3>Findings</h3>
+          <p>We ran two unmoderated usability studies: one after the low-fidelity prototype and one after the high-fidelity prototype. Both used almost the same tasks, so we could compare the flow, time taken and problems found.</p>
+          <div class="fig-pair">
+            <div>
+              <h4>Round 1</h4>
+              <ul>
+                <li>More flexible subscription plans</li>
+                <li>More flexibility in choosing meals</li>
+                <li>Clearer cues for what to do next</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Round 2</h4>
+              <ul>
+                <li>Better sorting of subscription plans</li>
+                <li>More flexible choice of date and time</li>
+                <li>A better colour palette</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= 3. REFINING THE DESIGN ================= -->
+        <section id="refine">
+          <div class="phase"><span class="num">3</span><h2>Refining the design</h2></div>
+          <p class="phase-steps">Mockups, high-fidelity prototype, accessibility</p>
+
+          <h3>Mockups</h3>
+          <p>I wanted an easy-going design and colour palette with clearer cues. At first I used only red and a lighter, almost pink shade of it, but it felt like too much red. We wanted something simple and elegant.</p>
+          <p>So I combined the same red with violet to create a gradient. Otherwise, I kept things as simple as possible. After watching how users interacted with the design, I adjusted the elements, spacing and placement of components.</p>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/mockups.jpg" alt="Four high-fidelity screens: choose a plan, vegetarian meal plans, 30-day meal plan and your plan">
+          </figure>
+
+          <h3>High-fidelity prototype</h3>
+          <p>The final prototype has a cleaner user flow and a cleaner design.</p>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/flow.jpg" alt="The high-fidelity prototype flow from home screen to plan selection, checkout and order confirmation">
+          </figure>
+
+          <h3>Accessibility</h3>
+          <ul>
+            <li><strong>Colour contrast:</strong> text has a contrast ratio of at least 4.5:1 against its background, and icons and UI components at least 3:1 against nearby colours. The primary red (#B60021) on white has a contrast ratio of 6.97:1. It passes WCAG AA for normal text, and WCAG AA and AAA for large text.</li>
+            <li><strong>Text size:</strong> no text is smaller than 10 points.</li>
+            <li><strong>Layout:</strong> clean and simple, and consistent across every screen.</li>
+            <li><strong>Navigation and components:</strong> simple navigation with clear cues for what to do next, and icons to help. Components with the same job look the same, thanks to a design system made for this app.</li>
+          </ul>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/layout.jpg" alt="Five final screens showing the consistent layout">
+          </figure>
+          <figure style="margin: 24px 0;">
+            <img src="images/restro/design-system.jpg" alt="Restro design system: typography, colours, icons, buttons, banner card, tabs and other components">
+            <figcaption class="hand" style="margin-top: 6px;">The design system made for Restro</figcaption>
+          </figure>
+        </section>
+
+        <!-- ================= 4. GOING FORWARD ================= -->
+        <section id="forward">
+          <div class="phase"><span class="num">4</span><h2>Going forward</h2></div>
+          <p class="phase-steps">Takeaways, next steps</p>
+
+          <h3>Impact</h3>
+          <p>Users gave the design positive reviews. Two things they said:</p>
+          <ul>
+            <li>"I want to try a monthly subscription plan to organise my food schedule."</li>
+            <li>"It seems it can solve my breakfast problem."</li>
+          </ul>
+
+          <h3>What I learned</h3>
+          <p>The research, interviews and surveys made me see things from the user's side and let go of my own assumptions. The accessibility research made me more empathetic. I learned that we should think about every person who might use the product, and when something isn't possible yet, look for another solution.</p>
+
+          <h3>Next steps</h3>
+          <ol>
+            <li>Let users choose how many meals they want each day: breakfast and lunch, or all three meals.</li>
+            <li>Add dine-in and pick-up options for subscription meals.</li>
+            <li>Let users cancel or delay a meal, or change the delivery time, when they're busy or away.</li>
+            <li>Run another round of usability testing to check the pain points are fixed.</li>
+            <li>Do more user research to find new needs.</li>
+          </ol>
+
+          <div class="next-case">
+            <span class="muted">Next case study</span>
+            <a href="learning-bin.html">Learning Bin</a>
+          </div>
+        </section>
+
       </article>
     </div>
   </main>
